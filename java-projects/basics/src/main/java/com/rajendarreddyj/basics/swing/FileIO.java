@@ -60,10 +60,11 @@ public class FileIO extends JFrame implements ActionListener {
                             + "text.txt";
                     FileOutputStream out = new FileOutputStream(outputFileName);
                     out.write(b);
-                    out.close();
                 } catch (java.io.IOException e) {
                     logger.info("Cannot write to text.txt");
-                }
+                } finally { 
+                    out.close();
+                } 
                 // Read from file
                 try {
                     String inputFileName = System.getProperty("user.home", File.separatorChar + "home" + File.separatorChar + "zelda") + File.separatorChar
@@ -73,10 +74,11 @@ public class FileIO extends JFrame implements ActionListener {
                     byte bt[] = new byte[(int) inputFile.length()];
                     in.read(bt);
                     s = new String(bt);
-                    in.close();
                 } catch (java.io.IOException e) {
                     logger.info("Cannot read from text.txt");
-                }
+                } finally { 
+                    in.close();
+                } 
                 // Clear text field
                 this.textField.setText("");
                 // Display text read from file
