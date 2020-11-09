@@ -8,6 +8,10 @@
 [![](https://img.shields.io/github/issues-raw/rajendarreddyj/development-java.svg)](https://github.com/rajendarreddyj/development-java/issues)
 [![](https://tokei.rs/b1/github/rajendarreddyj/development-java?category=code)](https://github.com/rajendarreddyj/development-java)
 
+
+__Fork de repositorio para ejercicios de__ [__trabajo 11__](https://github.com/alexisfr/ing-soft-3-2020/blob/master/trabajos/11-metricas-codigo.md)
+
+
 This repository will have example projects related to spring framework, hibernate, Core Java and Java EE.
 
 This mojo performs byte code analysis to determine missing or unused dependencies. This goal is meant to be launched from the command line. It will fork the build and execute test-compile so there are class files to analyze. If you want to bind analyze in your pom, use the dependency:analyze-only mojo instead.
